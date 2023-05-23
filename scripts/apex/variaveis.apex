@@ -20,6 +20,20 @@
 *
 */
 
+/* no site da organização da salesforce você consegue pegar o id de qualquer contato ou tipo de objeto criado pela URL ela fica exatamente
+   logo depois do nome da API do objeto que no caso eu peguei no objeto conta ou account / ID / view
+   trailblaze.lightning.force.com/lightning/r/Account/001Dn00000TR1XpIAL/view
+
+    todo objeto também tem um nome de API e o nome a fantasia que no caso seria o "nome verdadeiro dele" nisso você consegue visualizar o nome "verdadeiro" dele
+    clicando no objeto que você quer mexer e indo na engrenagem superior direita e indo em Editar Objeto ou indo na mesma engrenagem Configuração e na tela de configuração a tua abas a de Início e a Gerenciador de objetos,
+    basta clicar no gerenciador de objetos e digitar na busca rápida o nome do objeto em questão (obs:. o nome do objeto estará com o nome a fantasia).
+    ao clicar no objeto você se deparará com os detalhes do mesmo e lá estará o nome da sua API
+    
+    Nome da API
+    Account --> ou o nome de API do objeto que você clicou
+*/
+
+ID ids = '001Dn00000TR1XpIAL';
 String nome = 'Thiago Augusto';
 Integer idade = 23;
 Decimal quantidadeEmBolso = 60.0;
