@@ -6,7 +6,7 @@
 
     ----------------------------------------------------------------------------------------------------------------------------
 
-    Tipos primitivos
+    Tipos primitivos -> você pode acessar todos aqui --- https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_primitives.htm
 
     String
     Boolean
