@@ -3,10 +3,17 @@
 * 
 * Visto isso se você quiser criar uma variavel tanto vazia quanto populada você tem que chamar o tipo de dado que a variável vai ser inserida
 * seja ela String, Numerico, Booleano...
-* 
-* String : String
-* Boolean : Boolean
-* Numeric: Integer | Decimal
+*
+*    Tipos primitivos
+*
+*   String
+*   Boolean
+*   Integer
+*   Decimal
+*
+*    Tipos específicos SF
+
+    Id -> todo 
 *
 * A String caso você não saiba ele comporta somente texto
 *   String nome = 'Thiago Augusto';
