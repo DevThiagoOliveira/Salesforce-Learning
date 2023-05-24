@@ -38,9 +38,9 @@ conta.Phone = '9999-9999';
 
 insert conta;
 
-//igual esta no arquivo de hello para executar o linha de código que você queira testar basta selecionar a linha que queira testar, apertar
-// CTRL + SHIFT + P e colocar SFDX: Execute Anonymous Apex with Currently Selected Text
+//  igual esta no arquivo de hello para executar o linha de código que você queira testar basta selecionar a linha que queira testar, apertar
+//  CTRL + SHIFT + P e colocar SFDX: Execute Anonymous Apex with Currently Selected Text
 
-// ao finalizar e enviar o código você vai ver que dentro de contas existe um cliente chamado Banco do Brasil com o telefone 9999-9999
+//  ao finalizar e enviar o código você vai ver que dentro de contas existe um cliente chamado Banco do Brasil com o telefone 9999-9999
 
-// sempre atento de que, cada tipo de objeto tem os campos obrigatórios, e nesses campos caso você for criar um tipo de informação dele você de suma importancia necessita popular todos os campos obrigatorios dele caso não popule ocorrerá um erro
+//  sempre atento de que, cada tipo de objeto tem os campos obrigatórios, e nesses campos caso você for criar um tipo de informação dele você de suma importancia necessita popular todos os campos obrigatorios dele caso não popule ocorrerá um erro
