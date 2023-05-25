@@ -2,3 +2,4 @@
 // se quiser executar um código anonimamente basta clica no código .apex e colocar SFDX: Execute Anonymous Apex with Editor Contents
 // então ele executará o seu código anonimamente pelo terminal de debug do salesforce
 
+Message.sendEmail('bofihej970@pgobo.com', 'Olá', 'abc mensagem aleatoria 123');
