@@ -7,7 +7,8 @@
 
     ------------------------------------------------------------------------------------
 
-    List ou Set Declaração: o list e o set são iguais em declaração so muda que o set não repete dado.
+    List e Set Declaração: 
+    o list e o set são iguais em declaração so muda que o set não repete dado como não tem ordenação ou seja, com ele os dados não tem indice 0, 1, 2, 3.. são so um conjunto de dados.
 
     List<Tipo do Dado> nome da lista = new List<Mesmo tipo>(); não populada 
     List<Tipo do Dado> nome da lista = new List<Mesmo tipo>{'a', 'b', 'c', 'd'}; populada
