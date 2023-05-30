@@ -81,3 +81,18 @@ Map< Id, Account > mapContas = new Map< Id, Account >(contas);
 
 System.debug('Contas: ' + mapContas);
 System.debug('Contas: ' + mapContas.get('001Dn00000IkHSzIAN'));
+
+//------------------------------------------------------------------------------------
+// Há também como interar um Map dentro de outro Map
+
+Map<String, Map<String, String>> mapTeste3 = new Map<String, Map<String, String>>();
+
+//            | valor 
+//            V   V- Instancia o map pois dentro do outro ele não foi instanciado(Iniciado);       
+mapTeste3.put('pessoa 1', new Map<String, String>());
+
+// ele pode ser populado de duas formas
+mapTeste3.get('pessoa 1').put('nome' , 'Thiago');
+mapTeste3.put('pessoa 1', new Map<String, String>{'nome' => 'Thiago', 'sobrenome' => 'Augusto', 'idade' => '23'});
+
+System.debug(mapTeste3);
