@@ -1,0 +1,15 @@
+<!-- este é o arquivo de configuração do lwc, veja que o código que você usa aqui é totalmente diferente dos demais arquivos -->
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <!-- esté apiVersion é que indica a versão de atualição da API, bem auto literal -->
+    <apiVersion>57.0</apiVersion>
+    <!-- isExposed, automaticamente vem como padrão FALSE, ele serve para que caso você queira que seu lightning component seja usado em qualquer 
+    tela seja em home-page, app-page, ou qualquer um então caso você queira utilizar o seu lightning component você precisa setar ele como TRUE-->
+    <isExposed>true</isExposed>
+    <!-- caso seja true você precisa setar os TARGETS, no caso os lugares aonde ele vai poder ser usado, como setado abaixo ele pode ser usado em home record é na app page. Você pode mudar para qualquer tela que queira, caso seja so HomePage pode colocar somente home page ou qualquer outra page que você quiser-->
+    <targets>
+        <target>lightning__HomePage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__AppPage</target>
+    </targets>
+</LightningComponentBundle>

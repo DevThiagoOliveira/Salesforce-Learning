@@ -44,8 +44,7 @@ trigger ApexTrigger on Account ( // Você pode agir nos contextos ou capturar um
             }
         }
     }
-
-
+    
     if(Trigger.isBefore) {
        // não há como atuar sobre este isBefore no undelete pois o dado ainda está na lixeira
     }
