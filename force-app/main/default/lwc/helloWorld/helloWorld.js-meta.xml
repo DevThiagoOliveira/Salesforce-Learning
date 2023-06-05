@@ -15,4 +15,16 @@
         <target>lightning__RecordPage</target>
         <target>lightning__AppPage</target>
     </targets>
+
+    <!-- você também consegue especificar se quer somente usar em objetos X ou Y colocando -->
+    
+    <targetConfigs>
+        <targetConfig targets="lightning__HomePage">
+            <objects>
+                <!-- Desse modo somente o Objeto Account podera utilizar o meu component -->
+                <object>Account</object>
+            </objects>
+        </targetConfig>
+    </targetConfigs>
+
 </LightningComponentBundle>
