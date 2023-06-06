@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Contatos Relacionados" icon-name="custom:custom14">
+        <ul class="slds-m-around_medium">
+            <template for:each = {contatos.data} for:item="contato">
+                <li key={contato.Id}>
+                    <strong>Nome:</strong>{contato.FirstName} {contato.LastName}     <strong>Id:</strong>{contato.Id}
+                </li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>

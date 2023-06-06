@@ -9,7 +9,7 @@ export default class HelloWorld extends LightningElement {
      *  caso você quiser criar uma propriedade publica você coloca @api
      *  
      * 
-     *  publica => @api variavel;
+     *  publica => @api variavel; Essas propriedades públic se já forem dados variadas criadas e populadas como são públicas os válores delas são atribuidos automáticamente há variavel só por ela ser pública não precisando ter que chamar nada mais ou populala
      *  privada => variavel;
      *  rederiza um componente quando ocorre uma alteração => @track
      *  pega e mescla um dado da org
