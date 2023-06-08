@@ -1,9 +1,17 @@
 <!-- helloWorld.html => no HTML você tera um template que dentro deste template você tem o seu código HTML <template> Olá <div class="helloWorld"></div> </template>-->
 <template>
-    <input value={firstName}></input>
+    <lightning-card  title="Home" icon-name="custom:custom107">
+        <div class="slds-m-around_medium">
+            hello world, {nome}!!
+    
+            <lightning-input label="Nome" value={nome} onchange={atualizar}></lightning-input>
+        </div>
+    </lightning-card>
 </template>
 <!-- caso queira utilizar outro componente dentre deste componente a semantica é a seguinte
+
+    para chamar a variavel do JS para o hmtl coloque a variavel entre chaves {}, o mesmo vale para atributos de tag
     
-        <c-nome do componenete atributos={}> </c-nome do componenete>
--->
-<!-- você consegue criar um arquivo SVG também dentro do seu arquivo para ter um ícone personalizado do componenete mas poderá ter somente um arquivo SVG é ele tera que ter o mesmo nome de todos os arquivos -->
+    <c-nome do componenete atributos={}> </c-nome do componenete>
+
+    você consegue criar um arquivo SVG também dentro do seu arquivo para ter um ícone personalizado do componenete mas poderá ter somente um arquivo SVG é ele tera que ter o mesmo nome de todos os arquivos -->

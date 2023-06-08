@@ -10,21 +10,20 @@
     <isExposed>true</isExposed>
 
     <!-- caso seja true você precisa setar os TARGETS, no caso os lugares aonde ele vai poder ser usado, como setado abaixo ele pode ser usado em home record é na app page. Você pode mudar para qualquer tela que queira, caso seja so HomePage pode colocar somente home page ou qualquer outra page que você quiser-->
-    <targets>
-        <target>lightning__HomePage</target>
-        <target>lightning__RecordPage</target>
-        <target>lightning__AppPage</target>
-    </targets>
 
     <!-- você também consegue especificar se quer somente usar em objetos X ou Y colocando -->
     
-    <targetConfigs>
+    <targets>
+        <target>lightning__HomePage</target>
+    </targets>
+
+    <!-- <targetConfigs>
         <targetConfig targets="lightning__HomePage">
             <objects>
-                <!-- Desse modo somente o Objeto Account podera utilizar o meu component -->
+                 Desse modo somente o Objeto Account podera utilizar o meu component
                 <object>Account</object>
             </objects>
         </targetConfig>
-    </targetConfigs>
+    </targetConfigs> -->
 
 </LightningComponentBundle>

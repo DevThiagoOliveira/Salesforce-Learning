@@ -12,9 +12,7 @@ public with sharing class ChamandoLightningNoApex {
             } catch (Exception erro) {
                 throw new AuraHandledException(erro.getMessage());
             }
-
         }
-
         
         /** 
          *  caso você queira chamar o LWC (Lightning Web Component) no apex você precisa colocar @AuraEnable() antes do método 
