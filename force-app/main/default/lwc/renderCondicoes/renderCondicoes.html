@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Render Condições">
+        <div class="slds-m-around_medium">
+            <lightning-input type="checkbox" label="Mostrar Detalhes" onchange={handleChange}></lightning-input>
+            <template if:true = {detalhesVisiveis}>
+                <div class="slds-m-vertical_medium">
+                    bloco de if verdadeiro (if = true)
+                </div>
+            </template>
+            <template if:false = {detalhesVisiveis}>
+                <div class="slds-m-vertical_medium">
+                    bloco de if falso (if = false)
+                </div>
+            </template>   
+        </div>
+    </lightning-card>
+</template>

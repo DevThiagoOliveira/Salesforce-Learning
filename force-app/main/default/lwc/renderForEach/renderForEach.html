@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Render List ForEach">
+        <div class="slds-m-around_medium">
+            <template for:each={contatos} for:item="contato">
+                <li key={contato.Id}>
+                    {contato.Name}, {contato.Title}
+                </li>
+            </template>
+        </div>
+    </lightning-card>
+</template>

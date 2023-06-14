@@ -4,13 +4,13 @@
                 <lightning-card>
                     <lightning-formatted-text value={name} class="slds-text-heading_large"></lightning-formatted-text>
             </lightning-card>
-            </div>
-            <lightning-card>
-                <template if:true={record.data}> <!-- aqui estou fazendo a verificação via HTML, se há algum dado no sObject e trabalho o valor no JS -->
-                   <div class="slds-col slds-size_2-of-2">
-                       <lightning-formatted-text value={phone} class="slds-text-heading_large"></lightning-formatted-text>
-                   </div>
-               </template>
-            </lightning-card>
+        </div>
+        <lightning-card>
+            <template if:true={record.data}> <!-- aqui estou fazendo a verificação via HTML, se há algum dado no sObject e trabalho o valor no JS -->
+                <div class="slds-col slds-size_2-of-2">
+                    <lightning-formatted-text value={phone} class="slds-text-heading_large"></lightning-formatted-text>
+                </div>
+            </template>
+        </lightning-card>
     </div>
 </template>

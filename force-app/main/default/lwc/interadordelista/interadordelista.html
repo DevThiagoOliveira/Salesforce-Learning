@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Render Lista Interada">
+        <ul class="slds-m-around_medium">
+            <template iterator:it = {contatos}> <!-- os contatos é como uma lista de infomações, então você manda essas infomações para o interador cujo o nome é it então se você quiser alguma informação dessa "lista" você usa o interador it-->
+                <li key={it.value.id}> <!-- it e o nome do iterador aonde está as infomações | então eu pego os valores (value) | e quero mostrar o id -->
+                    
+                    <div if:true={it.first} class="list-first"></div> <!-- no iterador it me pega o primeira informação first -->
+                    {it.value.Name}, {it.value.Title} <!-- então entre as duas divs estou checando para ver se existe um dado no começo e um dadno no final-->
+                    <div if:true={it.last} class="list-last"></div> <!-- mesma coisa no last pegar a ultima informação-->
+                </li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>

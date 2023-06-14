@@ -8,3 +8,4 @@ Links úteis para caso esteja perdido com o Apex V
 
 Links úteis para caso esteja perdido com LWC (Lightining Web Componenet)
 * https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.get_started_lwc
+* https://www.lightningdesignsystem.com

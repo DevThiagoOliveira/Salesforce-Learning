@@ -2,9 +2,12 @@
 <template>
     <lightning-card  title="Home" icon-name="custom:custom107">
         <div class="slds-m-around_medium">
-            hello world, {nome}!!
+            <p>hello world, {nomeCompleto}!!</p>
     
-            <lightning-input label="Nome" value={nome} onchange={atualizar}></lightning-input>
+            <div class="slds-grid ">
+                <lightning-input class="input-nome slds-col slds-size_1-of-2" label="Nome" name='nome' onchange={atualizar}></lightning-input>
+                <lightning-input class="slds-col slds-size_1-of-2" label="Sobrenome" name='sobrenome' onchange={atualizar}></lightning-input>
+            </div>
         </div>
     </lightning-card>
 </template>

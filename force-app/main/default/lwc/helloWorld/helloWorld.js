@@ -2,10 +2,27 @@ import { LightningElement } from 'lwc'; // aqui você está importanto a funcion
 // caso for usar precisa-se importar aqui em cima
 
 export default class HelloWorld extends LightningElement {
-    nome = 'Thiago'; // você não precisa tipar um tipo pois como é JS ele já tipa para você o tipo pelo tipo de dado inserido, mas diferente do js aqui você não precisa dar um var ou let para criar uma variavel
+    nome = ''; // você não precisa tipar um tipo pois como é JS ele já tipa para você o tipo pelo tipo de dado inserido, mas diferente do js aqui você não precisa dar um var ou let para criar uma variavel
+    sobrenome = '';
+
+
 
     atualizar(element) {
-        this.nome = element.target.value;
+        const fields = element.target.name;
+
+        if (fields === 'nome') {
+            this.nome = this.template.querySelector(".input-nome").value; // aqui vocÊ tambem pode utilizar o querySelector, no js é document.querySelector aqui o documento é o template então. this.template para referenciar o template que você esta trabalhando e querySelector(""); -----> this.template.querySelector(".minha-classe");
+        }
+
+        if (fields ==='sobrenome') {
+            this.sobrenome = element.target.value;
+        }
+
+        
+    }
+    
+    get nomeCompleto() {
+        return `${this.nome} ${this.sobrenome}`.toUpperCase();
     }
 
     /**
